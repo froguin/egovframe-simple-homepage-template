@@ -5,7 +5,7 @@ MAINTAINER eGovframe Center
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the WAR file to Tomcat webapps directory
-COPY target/sht_webapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/sht_webapp.war /usr/local/tomcat/webapps/sht_webapp.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
