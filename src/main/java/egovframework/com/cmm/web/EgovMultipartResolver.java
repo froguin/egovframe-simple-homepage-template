@@ -68,7 +68,7 @@ public class EgovMultipartResolver extends CommonsMultipartResolver {
 	 *
 	 * @param servletContext
 	 */
-	public EgovMultipartResolver(ServletContext servletContext) {
+	public EgovMultipartResolver(javax.servlet.ServletContext servletContext) {
 		super(servletContext);
 	}
 

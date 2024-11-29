@@ -239,8 +239,8 @@ public class EgovProperties{
 	 * @param obj Object
 	 */
 	private static void debug(Object obj) {
-		if (obj instanceof java.lang.Exception) {
-			LOGGER.debug("IGNORED: {}", ((Exception)obj).getMessage());
+		if (obj instanceof java.lang.Exception exception) {
+			LOGGER.debug("IGNORED: {}", exception.getMessage());
 		}
 	}
 }

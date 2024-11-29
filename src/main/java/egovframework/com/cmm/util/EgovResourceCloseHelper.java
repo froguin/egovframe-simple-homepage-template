@@ -52,25 +52,25 @@ public class EgovResourceCloseHelper {
 	public static void closeDBObjects(Wrapper ... objects) {
 		for (Object object : objects) {
 			if (object != null) {
-				if (object instanceof ResultSet) {
+				if (object instanceof ResultSet set) {
 					try {
-						((ResultSet)object).close();
+						set.close();
 					} catch (SQLException ignore) {//KISA 보안약점 조치 (2018-10-29, 윤창원)
 						EgovBasicLogger.ignore("Occurred SQLException to close resource is ingored!!");
 					} catch (Exception ignore) {
 						EgovBasicLogger.ignore("Occurred Exception to close resource is ingored!!");
 					}
-				} else if (object instanceof Statement) {
+				} else if (object instanceof Statement statement) {
 					try {
-						((Statement)object).close();
+						statement.close();
 					} catch (SQLException ignore) {//KISA 보안약점 조치 (2018-10-29, 윤창원)
 						EgovBasicLogger.ignore("Occurred SQLException to close resource is ingored!!");
 					} catch (Exception ignore) {
 						EgovBasicLogger.ignore("Occurred Exception to close resource is ingored!!");
 					}
-				} else if (object instanceof Connection) {
+				} else if (object instanceof Connection connection) {
 					try {
-						((Connection)object).close();
+						connection.close();
 					} catch (SQLException ignore) {
 						EgovBasicLogger.ignore("Occurred SQLException to close resource is ingored!!");
 					} catch (Exception ignore) {

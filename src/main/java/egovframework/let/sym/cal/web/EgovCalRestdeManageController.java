@@ -5,10 +5,8 @@ import java.util.Calendar;
 import java.util.List;
 
 import egovframework.let.sym.cal.service.Restde;
-
+import jakarta.annotation.Resource;
 import org.egovframe.rte.fdl.property.EgovPropertyService;
-
-import javax.annotation.Resource;
 
 import org.apache.commons.collections.map.ListOrderedMap;
 import org.springframework.stereotype.Controller;

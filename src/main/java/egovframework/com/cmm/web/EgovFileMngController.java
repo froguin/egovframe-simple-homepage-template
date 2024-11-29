@@ -4,8 +4,7 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 import org.egovframe.rte.fdl.cryptography.EgovCryptoService;
@@ -21,6 +20,7 @@ import egovframework.com.cmm.service.EgovFileMngService;
 import egovframework.com.cmm.service.EgovProperties;
 import egovframework.com.cmm.service.FileVO;
 import egovframework.com.cmm.util.EgovUserDetailsHelper;
+import jakarta.annotation.Resource;
 import lombok.RequiredArgsConstructor;
 
 /**

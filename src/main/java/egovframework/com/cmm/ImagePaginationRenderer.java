@@ -40,7 +40,7 @@ public class ImagePaginationRenderer extends AbstractPaginationRenderer implemen
 
 	
 
-	public void setServletContext(ServletContext servletContext) {
+	public void setServletContext(javax.servlet.ServletContext servletContext) {
 		this.servletContext = servletContext;
 		initVariables();
 	}

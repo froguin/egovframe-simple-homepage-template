@@ -42,7 +42,7 @@ public class EgovFileUploadUtil extends EgovFormBasedFileUtil {
 	 * @return
 	 * @throws Exception
 	 */
-	public static List<EgovFormBasedFileVo> uploadFiles(HttpServletRequest request, String where, long maxFileSize)
+	public static List<EgovFormBasedFileVo> uploadFiles(javax.servlet.http.HttpServletRequest request, String where, long maxFileSize)
 		throws Exception {
 		List<EgovFormBasedFileVo> list = new ArrayList<EgovFormBasedFileVo>();
 

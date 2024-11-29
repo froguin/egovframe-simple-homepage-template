@@ -122,7 +122,7 @@ public class EgovNumberUtil {
 			LOGGER.error("ERROR parsing", e.getMessage());
 		}
 
-		cnvrStr = String.format("%1$tY-%1$tm-%1$td", cnvrDate);
+		cnvrStr = "%1$tY-%1$tm-%1$td".formatted(cnvrDate);
 
 		return cnvrStr;
 

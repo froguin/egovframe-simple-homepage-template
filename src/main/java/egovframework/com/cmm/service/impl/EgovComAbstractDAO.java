@@ -1,7 +1,6 @@
 package egovframework.com.cmm.service.impl;
 
-import javax.annotation.Resource;
-
+import jakarta.annotation.Resource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 
