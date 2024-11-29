@@ -14,7 +14,7 @@
         </license>
     </licenses>
     <properties>
-        <spring.maven.artifact.version>6.1.2</spring.maven.artifact.version>
+        <spring.maven.artifact.version>5.3.27</spring.maven.artifact.version>
         <org.egovframe.rte.version>4.2.0</org.egovframe.rte.version>
     </properties>
     <repositories>
@@ -229,6 +229,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
+            <version>${spring.maven.artifact.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-commons-fileupload</artifactId>
             <version>${spring.maven.artifact.version}</version>
         </dependency>
     </dependencies>
